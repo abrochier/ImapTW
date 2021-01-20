@@ -6,7 +6,7 @@ A quick and dirty script to synchronize Taskwarrior and an IMAP mailbox. This on
 
 # Install 
 
-Make sure you have Imapclient and taskw installed
+This probably requires Python >= 3. Make sure you have imapclient and taskw installed
 ```shell 
 pip install imapclient taswk
 ```
