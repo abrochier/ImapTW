@@ -14,7 +14,7 @@ for uid, message_data in server.fetch(messages, "RFC822").items():
     n=next((item for item in tsk if 'mailid' in item and item['mailid'] == str(uid)), False)
     if n==False:
         email_message = email.message_from_bytes(message_data[b"RFC822"])
-        w.task_add(repr(str(make_header(decode_header(email_message.get("From")))))+repr(str(make_header(decode_header(email_message.get("Subject"))))),tag="email", mailid=uid)
+        w.task_add(repr(str(make_header(decode_header(email_message.get("From")))))+" "+repr(str(make_header(decode_header(email_message.get("Subject"))))),tag="email", mailid=uid)
     else:
         if n['status']=='completed':
            clean.append(uid)
