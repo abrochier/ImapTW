@@ -7,14 +7,14 @@ A quick and dirty script to synchronize taskwarrior and an IMAP mailbox. This on
 # Install 
 
 Make sure you have Imapclient and taskw installed
-'''shell 
+```shell 
 pip install imapclient taswk
-'''
+```
 Create a user defined attributes for TW called mailid
 
-'''shell
+```shell
 task config uda.mailid.type string
-'''
+```
 
 Download and edit the file `imaptw.py`, change login and password to the correct thing. Setup your cron to execute this script as often as you like.
 
