@@ -8,7 +8,7 @@ A quick and dirty script to synchronize [Taskwarrior](https://taskwarrior.org/) 
 
 This probably requires Python >= 3. Make sure you have [imapclient](https://pypi.org/project/IMAPClient/) and [taskw](https://pypi.org/project/taskw/) installed
 ```shell 
-pip install imapclient taskwk
+pip install imapclient taskw
 ```
 Create a user defined attributes for TW called mailid
 
